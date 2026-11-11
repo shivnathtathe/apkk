@@ -695,6 +695,59 @@ fun TorchScreen(torchManager: TorchManager) {
 `
   );
 
+  zip.file(
+    'app/src/main/res/drawable/ic_launcher_background.xml',
+    `<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#121212"
+        android:pathData="M0,0h108v108h-108z"/>
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M9,0L108,99V108H99L0,9V0H9Z"/>
+</vector>
+`
+  );
+
+  zip.file(
+    'app/src/main/res/drawable/ic_launcher_foreground.xml',
+    `<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M60,34H48c-2.2,0 -4,1.8 -4,4v6l8,8v22c0,2.2 1.8,4 4,4h0c2.2,0 4,-1.8 4,-4V52l8,-8v-6C64,35.8 62.2,34 60,34zM54,58c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2s2,0.9 2,2S55.1,58 54,58z"/>
+</vector>
+`
+  );
+
+  zip.file(
+    'app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml',
+    `<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+`
+  );
+
+  zip.file(
+    'app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml',
+    `<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+`
+  );
+
   // README with Play Store instructions
   zip.file(
     'PLAYSTORE_PUBLISH_GUIDE.md',
