@@ -1,4 +1,4 @@
-package com.example.lumentorch
+package com.shaktilabs.lumentorch
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,7 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lumentorch.camera.TorchManager
+import com.shaktilabs.lumentorch.camera.TorchManager
 
 class MainActivity : ComponentActivity() {
 

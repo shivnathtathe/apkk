@@ -70,11 +70,11 @@ zipStorePath=wrapper/dists
 }
 
 android {
-    namespace = "com.example.lumentorch"
+    namespace = "com.shaktilabs.lumentorch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.lumentorch"
+        applicationId = "com.shaktilabs.lumentorch"
         minSdk = 33 // Android 13 (Tiramisu)
         targetSdk = 34 // Android 14 (Play Store requirement)
         versionCode = 1
@@ -146,7 +146,7 @@ dependencies {
     `<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.lumentorch">
+    package="com.shaktilabs.lumentorch">
 
     <!-- Flashlight hardware feature requirement -->
     <uses-feature
@@ -205,7 +205,7 @@ dependencies {
   // Kotlin files
   zip.file(
     'app/src/main/java/com/example/lumentorch/camera/TorchManager.kt',
-    `package com.example.lumentorch.camera
+    `package com.shaktilabs.lumentorch.camera
 
 import android.content.Context
 import android.hardware.camera2.CameraAccessException
@@ -362,14 +362,14 @@ class TorchManager(private val context: Context) {
 
   zip.file(
     'app/src/main/java/com/example/lumentorch/service/TorchTileService.kt',
-    `package com.example.lumentorch.service
+    `package com.shaktilabs.lumentorch.service
 
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import com.example.lumentorch.MainActivity
-import com.example.lumentorch.camera.TorchManager
+import com.shaktilabs.lumentorch.MainActivity
+import com.shaktilabs.lumentorch.camera.TorchManager
 
 class TorchTileService : TileService() {
 
@@ -419,7 +419,7 @@ class TorchTileService : TileService() {
 
   zip.file(
     'app/src/main/java/com/example/lumentorch/MainActivity.kt',
-    `package com.example.lumentorch
+    `package com.shaktilabs.lumentorch
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -440,7 +440,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lumentorch.camera.TorchManager
+import com.shaktilabs.lumentorch.camera.TorchManager
 
 class MainActivity : ComponentActivity() {
 

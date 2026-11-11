@@ -1,9 +1,9 @@
-package com.example.lumentorch.service
+package com.shaktilabs.lumentorch.service
 
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import com.example.lumentorch.camera.TorchManager
+import com.shaktilabs.lumentorch.camera.TorchManager
 
 class TorchTileService : TileService() {
 

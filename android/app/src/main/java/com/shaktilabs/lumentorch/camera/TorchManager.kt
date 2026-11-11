@@ -1,4 +1,4 @@
-package com.example.lumentorch.camera
+package com.shaktilabs.lumentorch.camera
 
 import android.content.Context
 import android.hardware.camera2.CameraAccessException

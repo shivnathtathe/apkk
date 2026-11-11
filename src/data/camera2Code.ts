@@ -10,7 +10,7 @@ export const ANDROID_CAMERA2_FILES: CodeFile[] = [
     filename: 'TorchManager.kt',
     language: 'kotlin',
     description: 'Android 13+ Camera2 API Manager handling multi-level torch strength and coroutine strobe',
-    code: `package com.example.lumentorch.camera
+    code: `package com.shaktilabs.lumentorch.camera
 
 import android.content.Context
 import android.hardware.camera2.CameraAccessException
@@ -206,7 +206,7 @@ class TorchManager(private val context: Context) {
     filename: 'MainActivity.kt',
     language: 'kotlin',
     description: 'Jetpack Compose Material 3 UI with Brightness Slider, Strobe Controls & Presets',
-    code: `package com.example.lumentorch
+    code: `package com.shaktilabs.lumentorch
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -219,7 +219,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.lumentorch.camera.TorchManager
+import com.shaktilabs.lumentorch.camera.TorchManager
 
 class MainActivity : ComponentActivity() {
 
@@ -396,7 +396,7 @@ fun TorchScreen(torchManager: TorchManager) {
     description: 'Permissions and camera hardware features for torch access',
     code: `<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lumentorch">
+    package="com.shaktilabs.lumentorch">
 
     <!-- Flashlight hardware feature declaration -->
     <uses-feature
@@ -458,11 +458,11 @@ fun TorchScreen(torchManager: TorchManager) {
 }
 
 android {
-    namespace = "com.example.lumentorch"
+    namespace = "com.shaktilabs.lumentorch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.lumentorch"
+        applicationId = "com.shaktilabs.lumentorch"
         minSdk = 33 // Android 13 (Tiramisu) for native turnOnTorchWithStrengthLevel
         targetSdk = 34
         versionCode = 1
