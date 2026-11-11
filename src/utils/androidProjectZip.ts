@@ -71,12 +71,12 @@ zipStorePath=wrapper/dists
 
 android {
     namespace = "com.shaktilabs.lumentorch"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.shaktilabs.lumentorch"
         minSdk = 33 // Android 13 (Tiramisu)
-        targetSdk = 34 // Android 14 (Play Store requirement)
+        targetSdk = 36 // Android 16 (Target SDK 36)
         versionCode = 1
         versionName = "1.0.0"
 

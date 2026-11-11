@@ -459,12 +459,12 @@ fun TorchScreen(torchManager: TorchManager) {
 
 android {
     namespace = "com.shaktilabs.lumentorch"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.shaktilabs.lumentorch"
         minSdk = 33 // Android 13 (Tiramisu) for native turnOnTorchWithStrengthLevel
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
 

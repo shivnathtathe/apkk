@@ -227,6 +227,50 @@ Contact: support@lumentorch.app`;
         <div className="p-5 overflow-y-auto flex-1 space-y-4 text-xs select-text">
           {activeStepTab === 'no_laptop' && (
             <div className="space-y-4">
+              {/* Live GitHub Actions Signed AAB Banner */}
+              <div className="p-4 rounded-2xl bg-gradient-to-br from-emerald-500/20 via-emerald-600/10 to-transparent border border-emerald-500/40 space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-2.5 w-2.5 relative">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span className="text-emerald-400 font-bold text-xs uppercase tracking-wider">GitHub Actions Signed Release</span>
+                  </div>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono font-medium border border-emerald-500/30">
+                    v1.0.0-5 Active
+                  </span>
+                </div>
+
+                <div>
+                  <h4 className="text-white font-bold text-sm">LumenTorch Signed AAB is Ready</h4>
+                  <p className="text-neutral-300 text-[11px] mt-0.5 leading-relaxed">
+                    Built and signed in the cloud for <code className="text-emerald-400 font-mono font-semibold">com.shaktilabs.lumentorch</code> with Target SDK 36. Ready to upload directly to Google Play Console from your phone!
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2 pt-1">
+                  <a
+                    href="https://github.com/shivnathtathe/apkk/releases/download/v1.0.0-5/LumenTorch-release-signed.aab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold text-xs shadow-lg shadow-emerald-500/20 transition-all cursor-pointer"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Download Signed AAB (.aab)</span>
+                  </a>
+                  <a
+                    href="https://github.com/shivnathtathe/apkk/releases"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-300 font-medium text-xs border border-neutral-700 transition-colors"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>View GitHub Releases</span>
+                  </a>
+                </div>
+              </div>
+
               {/* No Laptop Banner */}
               <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 space-y-2">
                 <div className="flex items-center gap-2 text-amber-400 font-bold text-sm">
@@ -400,13 +444,13 @@ Contact: support@lumentorch.app`;
               <div className="p-3.5 rounded-xl bg-neutral-800/40 border border-neutral-800 space-y-1.5">
                 <h4 className="font-semibold text-neutral-200 flex items-center gap-1.5">
                   <Smartphone className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Google Play 2024/2025 Compliance Verified</span>
+                  <span>Google Play Compliance Verified</span>
                 </h4>
                 <div className="grid grid-cols-2 gap-2 text-[11px] text-neutral-400 font-mono">
-                  <div>· Target SDK: API 34 (Android 14)</div>
+                  <div>· Target SDK: API 36 (Android 16)</div>
                   <div>· Min SDK: API 33 (Android 13)</div>
                   <div>· UI Toolkit: Jetpack Compose</div>
-                  <div>· Architecture: Camera2 Multi-level</div>
+                  <div>· Package: com.shaktilabs.lumentorch</div>
                 </div>
               </div>
             </div>

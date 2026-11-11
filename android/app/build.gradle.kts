@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.shaktilabs.lumentorch"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.shaktilabs.lumentorch"
         minSdk = 33 // Android 13 (Tiramisu) for native turnOnTorchWithStrengthLevel
-        targetSdk = 34 // Android 14 (Play Store requirement)
+        targetSdk = 36 // Updated target SDK
         versionCode = 1
         versionName = "1.0.0"
 
