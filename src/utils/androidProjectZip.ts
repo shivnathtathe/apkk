@@ -775,17 +775,29 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew || true
+    - name: Ensure Gradle Wrapper and Dependencies
+      run: |
+        mkdir -p android/gradle/wrapper
+        if [ ! -s android/gradle/wrapper/gradle-wrapper.jar ]; then
+          echo "Downloading gradle-wrapper.jar..."
+          curl -fsSL https://raw.githubusercontent.com/gradle/gradle/v8.4.0/gradle/wrapper/gradle-wrapper.jar -o android/gradle/wrapper/gradle-wrapper.jar
+        fi
+        chmod +x android/gradlew
+
+    - name: Set up Gradle 8.4
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: '8.4'
 
     - name: Build Android App Bundle (.aab)
+      working-directory: android
       run: ./gradlew bundleRelease --stacktrace
 
     - name: Upload Signed AAB Artifact
       uses: actions/upload-artifact@v4
       with:
         name: LumenTorch-PlayStore-AAB
-        path: app/build/outputs/bundle/release/*.aab
+        path: android/app/build/outputs/bundle/release/*.aab
 `
   );
 
