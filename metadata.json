@@ -1,0 +1,6 @@
+{
+  "name": "LumenTorch - Android 13+ Camera2 Torch Controller",
+  "description": "Multi-level torch brightness controller for Android 13+ using Camera2 API with precision slider, strobe flicker modes, Morse SOS, and presets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#0f0f0f"/>
+  <circle cx="256" cy="256" r="220" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="140" fill="#1c1917" stroke="#fbbf24" stroke-width="12"/>
+  <circle cx="256" cy="256" r="100" fill="url(#grad)"/>
+  <!-- Power Torch icon -->
+  <path d="M256,190 L256,260 M220,225 C205,240 205,270 220,290 C238,308 274,308 292,290 C307,270 307,240 292,225" fill="none" stroke="#451a03" stroke-width="20" stroke-linecap="round"/>
+</svg>
