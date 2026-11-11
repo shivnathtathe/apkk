@@ -22,7 +22,8 @@ android {
 
     signingConfigs {
         create("release") {
-            storeFile = file("../keystore/release.keystore")
+            val keystoreFile = rootProject.file("keystore/release.keystore").takeIf { it.exists() } ?: file("release.keystore")
+            storeFile = keystoreFile
             storePassword = "LumenTorch2026!"
             keyAlias = "lumentorch"
             keyPassword = "LumenTorch2026!"
