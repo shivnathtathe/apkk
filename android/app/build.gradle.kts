@@ -9,11 +9,10 @@ android {
 
     defaultConfig {
         applicationId = "com.shaktilabs.lumentorch"
-        minSdk = 33 // Android 13 (Tiramisu) for native turnOnTorchWithStrengthLevel
-        targetSdk = 36 // Updated target SDK
-        versionCode = 1
-        versionName = "1.0.0"
-
+        minSdk = 33 // Android 13 (Tiramisu)
+        targetSdk = 36 // Android 16 (Target SDK 36)
+        versionCode = 2
+        versionName = "1.0.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
